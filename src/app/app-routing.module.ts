@@ -3,10 +3,14 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { AppComponent } from './app.component';
 import { AboutComponent } from './about/about.component';
+import { FormComponent } from './form/form.component';
+import { FormgroupComponent } from './formgroup/formgroup.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },  // เปลี่ยนเส้นทางหลักไปที่ HomeComponent
-  { path: 'home', component: AboutComponent }  // เส้นทาง /home ให้แสดง HomeComponent
+  { path: '', component: HomeComponent },  
+  { path: 'about', component: AboutComponent },
+  { path: 'form', component: FormComponent },
+  { path: 'formgroup', component: FormgroupComponent }
 ];
 
 @NgModule({

@@ -14,7 +14,13 @@ export class HomeComponent {
   count = 100;
   onClick(){
     this.count--;
-    // console.log('clicked');
-    this.router.navigate(['home']); 
+  }
+
+  gotoform(){
+    this.router.navigate(['form']);
+  }
+
+  gotoformgroup(){
+    this.router.navigate(['formgroup']);
   }
 }
