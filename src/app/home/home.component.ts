@@ -23,4 +23,8 @@ export class HomeComponent {
   gotoformgroup(){
     this.router.navigate(['formgroup']);
   }
+
+  gotodatatable(){
+    this.router.navigate(['datatable']);
+  }
 }

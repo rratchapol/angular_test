@@ -8,6 +8,9 @@ import { AboutComponent } from './about/about.component';
 import { FormComponent } from './form/form.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FormgroupComponent } from './formgroup/formgroup.component';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { HttpClientModule } from '@angular/common/http';
+import { DatatableComponent } from './datatable/datatable.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -15,15 +18,20 @@ import { FormgroupComponent } from './formgroup/formgroup.component';
     AboutComponent,
     FormComponent,
     FormgroupComponent,
+    DatatableComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule  
+    ReactiveFormsModule,
+    HttpClientModule
+    
 
   ],
-  providers: [],
+  providers: [
+    provideAnimationsAsync()
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
